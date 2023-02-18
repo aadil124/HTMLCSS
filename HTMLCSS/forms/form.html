@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Basic Form</h1>
+    <form action="">
+      <fieldset>
+        <legend>Basic Info</legend>
+        <label for="name">Name: </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name here"
+        />
+        <br /><br />
+        <label for="address">Address: </label>
+        <textarea
+          id="address"
+          name="address"
+          rows="2"
+          cols="100"
+          placeholder="Enter your address here"
+        ></textarea>
+        <br /><br />
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" />
+        <br /><br />
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" />
+        <br /><br />
+        <label for="tel">Phone: </label>
+        <input type="tel" id="tel" name="tel" />
+        <br /><br />
+        <label for="date">DOB: </label>
+        <input type="date" id="date" name="date" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Choose Cars and Bikes</legend>
+        <label for="cars">choose car from following:</label>
+        <select id="cars" name="cars">
+          <option value="audi">Audi</option>
+          <option value="swift">swift</option>
+          <option value="bmw">BMW</option>
+          <option value="honda" selected>honda</option>
+          <option value="benz">benz</option>
+        </select>
+        <br /><br />
+        <label for="bikes">choose a bike</label>
+        <select id="bikes" name="bikes" size="3" multiple>
+          <option value="hero">hero</option>
+          <option value="honda">Honda</option>
+          <option value="bmw">BMW</option>
+          <option value="bugatti">Bugatti</option>
+          <option value="tvs">TVS</option>
+          <option value="ola">Ola</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Favorite Web Languages</legend>
+        <input type="radio" name="favlanguage" id="html" value="html" />
+        <label for="html">HTML</label>
+        <input type="radio" name="favlanguage" id="css" value="css" />
+        <label for="css">CSS</label>
+        <input type="radio" name="favlanguage" id="java" value="java" />
+        <label for="java">Java</label>
+        <input type="radio" name="favlanguage" id="c++" value="c++" />
+        <label for="c++">C++</label>
+        <br /><br />
+        <input type="checkbox" name="flanguage" id="react" />
+        <label for="react">React</label>
+        <input type="checkbox" name="flanguage" id="angular" />
+        <label for="angular">Angular</label>
+        <input type="checkbox" name="flanguage" id="veu" />
+        <label for="veu">Veu</label>
+        <input type="checkbox" name="flanguage" id="nodejs" />
+        <label for="nodejs">Nodejs</label>
+      </fieldset>
+      <fieldset>
+        <legend>Date time file</legend>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" />
+        <br />
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31" /><br />
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02" />
+        <br />
+        <label for="birthdaytime">Birthday (date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime" />
+        <br />
+        <label for="bdaymonth">Birthday (month and year):</label>
+        <input type="month" id="bdaymonth" name="bdaymonth" /><br />
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile" /><br />
+        <label for="vol">Volume (between 0 and 50):</label>
+        <input type="range" id="vol" name="vol" min="0" max="50" />
+      </fieldset>
+      <br />
+      <input type="submit" value="submit" />
+      <input type="reset" value="reset" />
+    </form>
+  </body>
+</html>
