@@ -20,10 +20,14 @@ html,body{
  height: 45%;
  left: 20%;
  top: 20%;
+ animation-name: movingCloud;
+ animation-duration: 8s;
+ animation-timing-function: ease-in;
+ animation-iteration-count: infinite;
 }
 
 .cloud:hover{
-opacity: 40%;
+/* opacity: 40%; */
 transform: translateX(100px);
 }
 .grass{
@@ -46,10 +50,45 @@ transform: translateX(100px);
 .audi,.maruti {
      position: absolute;
      height: 60%;
-     transform: translateX(30px);
+}
+
+.audi{
+    bottom: 40%;
+    animation-name: driveaudi;
+    animation-duration: 9s;
+    /* animation-iteration-count: 3; */
+        animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* animation-timing-function: ease-in; */
+    /* animation-timing-function: ease-out; */
 }
 
 .maruti{
-position: absolute;
 top: 25%;
+    animation-name: drivemaruti;
+    animation-duration: 7s;
+    /* animation-iteration-count: 3; */
+    animation-iteration-count: infinite;
+    /* animation-timing-function: linear; */
+    animation-timing-function: ease-in;
+    /* animation-timing-function: ease-out; */
+}
+
+@keyframes driveaudi {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(1100px);
+    }
+}
+@keyframes drivemaruti{
+    from{transform: translateX(0px);}
+    to{transform: translateX(1100px);}
+}
+
+@keyframes movingCloud {
+    from{transform: translate(0px);}
+    to{transform: translate(1000px);}
+
 }
