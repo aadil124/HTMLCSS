@@ -21,6 +21,11 @@ html,body{
  left: 20%;
  top: 20%;
 }
+
+.cloud:hover{
+opacity: 40%;
+transform: translateX(100px);
+}
 .grass{
     background-color: green;
     height: 20%;
@@ -29,23 +34,22 @@ html,body{
 .road{
     background-color: gray;
     height: 35%;
-   
+    border-top: 5px solid black;
 }
 .divider{
-    border: 5px solid black;
-    /* position:absolute;
-    border-top: 4px dashed white;
-    top: 50%; */
+    position:absolute;
+    border: 4px dashed white;
+    top: 35%;
+    width: 100%;
 }
 
 .audi,.maruti {
      position: absolute;
-     height: 70%;
+     height: 60%;
+     transform: translateX(30px);
 }
 
-.audi{
-
-}
 .maruti{
-
+position: absolute;
+top: 25%;
 }
