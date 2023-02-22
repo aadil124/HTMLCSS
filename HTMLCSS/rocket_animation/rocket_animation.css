@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sky,.road{
+    position: relative;
+}
+
+.sky{
+    background-color: skyblue;
+    height: 50%;
+}
+.cloud{
+    height: 60%;
+    width: 30%;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+.rocket{
+    height: 50%;
+    width: 15%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    animation-name: moverocket;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+}
+.grass{
+    background-color: green;
+    height: 20%;
+}
+.road{
+    background-color: gray;
+    height: 30%;
+}
+
+@keyframes moverocket {
+
+    from{ transform: translateY(0px);}
+    to{transform: translateY(-300px) rotateY(30deg);}
+
+    /* from{transform: translateY(-300px) rotateX(30deg) ;}
+    to{transform: rotateX(30deg);} */
+    
+}
