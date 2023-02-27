@@ -17,6 +17,24 @@ body {
     "section section section section"
     "section section section section"
     "footer footer footer footer";
+    grid-gap: 10px ;
+}
+
+/* responsive */
+
+@media screen and (min-width:300px) and (max-width:600px){
+    .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas:
+                "nav nav nav nav"
+                "header header header header"
+                "aside aside aside aside"
+                "main main main main"
+                "section section section section"
+                "section section section section"
+                "footer footer footer footer";
+        }
 }
 
 .container > *{
