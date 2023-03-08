@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --color1: #ffffff;
+    --color2: #cd9042;
+    --color3: rgb(215,214,214);
+
+    --bg-nav:#131921;
+    --bg-subnav:#232f3e;
+    --bg-body:#eaeded;
+}
+
+body{
+    background-color: var(--bg-body);
+}
+
+.d-flex{
+    display: flex;
+}
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+nav{
+    width: 100%;
+    background-color: var(--bg-nav);
+    text-align: center;
+}
+
+nav .nav_brand_logo a{
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+}
+nav .nav_brand_logo{
+   position: relative;
+}
+
+nav .nav_brand_logo a img{
+    width: 100px;
+    margin: 20px 18px 0;
+}
+nav .prime{
+    color:#8091a5;
+    position: absolute;
+    top: 45px;
+    right: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+nav .nav_brand_logo a span {
+    color: var(--color1);
+    font-size: 14px;
+    margin-left: -15px;
+    margin-top: 8px;
+}
+
+nav .addr a p , h4{
+    color: var(--color1);
+    text-decoration: none;
+    margin: auto;
+}
+nav .addr a p{
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 1px;
+}
+nav .addr a h4{
+   
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: 400;
+}
+nav .addr {
+    padding: 5px;
+    margin-top: 10px;
+}
+
+nav .icon li{
+    color: var(--bg-body);
+    margin-top: 5px;
+    margin-left: 15px;
+}
