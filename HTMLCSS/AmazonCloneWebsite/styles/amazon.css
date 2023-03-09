@@ -36,6 +36,7 @@ nav{
     text-align: center;
 }
 
+ /* start Brand Logo  */
 nav .nav_brand_logo a{
     display: flex;
     text-decoration: none;
@@ -66,7 +67,9 @@ nav .nav_brand_logo a span {
     margin-left: -15px;
     margin-top: 8px;
 }
+/* End Brand Logo */
 
+/* Start Select address */
 nav .addr a p , h4{
     color: var(--color1);
     text-decoration: none;
@@ -94,3 +97,29 @@ nav .icon li{
     margin-top: 5px;
     margin-left: 15px;
 }
+/* End Select address */
+
+/* start of search */
+nav .d_flex_Search{
+    display: flex;
+    align-items: center;
+    
+}
+nav .d_flex_Search #allmenu{
+    margin-left: 10px;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+nav .d_flex_Search input {
+    padding: 10px;
+    width: 500px;
+}
+nav .d_flex_Search i {
+    padding: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #cd9042;
+   
+}
+/* End of search */
