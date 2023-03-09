@@ -67,6 +67,9 @@ nav .nav_brand_logo a span {
     margin-left: -15px;
     margin-top: 8px;
 }
+/* .nav_brand_logo:hover{
+border: 2px solid white;
+} */
 /* End Brand Logo */
 
 /* Start Select address */
@@ -81,45 +84,79 @@ nav .addr a p{
     font-size: 12px;
     font-weight: 400;
     padding: 1px;
+    margin-left: 5px;
 }
 nav .addr a h4{
-   
+    padding: 2px;
     font-family: Arial, Helvetica, sans-serif; 
-    font-weight: 400;
+    font-weight: 600;
+    margin-left: 3px;
 }
 nav .addr {
+    display: flex;
     padding: 5px;
-    margin-top: 10px;
+    align-items: center;
 }
 
-nav .icon li{
+nav .addr .icon li{
     color: var(--bg-body);
-    margin-top: 5px;
-    margin-left: 15px;
+    margin-bottom: -10px;
+    margin-left: 10px; 
 }
+/* .addr:hover{
+    border: 2px solid white;
+} */
 /* End Select address */
 
 /* start of search */
 nav .d_flex_Search{
     display: flex;
     align-items: center;
-    
 }
 nav .d_flex_Search #allmenu{
     margin-left: 10px;
     padding: 10px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-radius: 5px 0px 0px 5px;
+}
+nav .d_flex_Search #allmenu option{
+   background-color: var(--bg-body); 
+   color: var(--bg-nav);
 }
 nav .d_flex_Search input {
     padding: 10px;
     width: 500px;
+    border: none;
 }
 nav .d_flex_Search i {
     padding: 10px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background-color: #cd9042;
+    border-radius: 0px 5px 5px 0px;
+    background-color: var(--color2);
    
 }
 /* End of search */
+
+/* .block{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+} */
+
+/* start of Country flag */
+nav .country_flag{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-left: 10px;
+}
+nav .country_flag #country_language option{
+   border: none;
+    padding: 5px;
+}
+nav .country_flag #country_language {
+   margin-left: 5px;
+   background: var(--bg-nav);
+   color: var(--color1);
+   font-weight: 800;
+   font-family: Arial, Helvetica, sans-serif;
+   list-style: none;
+}
