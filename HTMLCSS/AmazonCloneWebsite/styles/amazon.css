@@ -149,7 +149,6 @@ nav .country_flag{
     margin-left: 10px;
 }
 nav .country_flag #country_language option{
-   border: none;
     padding: 5px;
 }
 nav .country_flag #country_language {
@@ -158,5 +157,82 @@ nav .country_flag #country_language {
    color: var(--color1);
    font-weight: 800;
    font-family: Arial, Helvetica, sans-serif;
-   list-style: none;
+   border-style: none;
 }
+/* End of Country flag */
+
+/* Start of sign in */
+
+nav .accounts{
+    display: flex;
+    align-items:center;
+    text-align: left;
+    padding: 5px;
+    position: relative;
+}
+nav .accounts a p{
+    text-decoration: none;
+    color: var(--color1);
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav .accounts a h4{
+    padding: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+nav .accounts a i{
+    position: absolute;
+    top: 34px;
+    left: 140px;
+    color: grey;
+}
+/* End of sign in */
+
+ /* Start of Returns and Orders  */
+ nav .returns{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+ }
+ nav .returns a{
+    text-decoration: none;
+    color: var(--color1);
+    text-align: left;
+ }
+
+ nav .returns a p {
+     font-size: 13px;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ nav .returns a h4 {
+     padding: 1px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 600;
+ }
+ /* End of Returns and Orders  */
+
+ /* Start of Cart items */
+ nav .cart{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    /* background-color: var(--color1); */
+ }
+ nav .cart a{
+    text-decoration: none;
+    color: var(--color1);
+ }
+ nav .cart .fa-cart-shopping{
+  font-size: 30px;
+ }
+
+ nav .cart a span{
+padding: 1px;
+font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+ }
+
+ /* End of Cart items */
