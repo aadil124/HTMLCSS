@@ -236,3 +236,10 @@ font-size: 15px;
  }
 
  /* End of Cart items */
+
+ /* start of subnav */
+
+ .subnav{
+    background-color: var(--bg-subnav);
+    padding: 10px;
+ }
