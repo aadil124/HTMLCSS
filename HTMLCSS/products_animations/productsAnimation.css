@@ -21,14 +21,16 @@ width: 380px;
    margin: 20px;
    box-shadow: 0px 5px 15px rgba(14, 13, 13, 0.5);
    text-align: justify;
-    overflow: hidden;
+  overflow: hidden;
   
 }
 
 .container .card .content{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 .container .card .icon{
    text-align: center;
@@ -57,7 +59,8 @@ a{
     padding: 10px 20px;
     text-decoration: none;
     color: black;
-    box-shadow: 0px 5px 15px rgba(14, 13, 13, 0.5)
+    box-shadow: 0px 5px 15px rgba(14, 13, 13, 0.5);
+    border-radius: 5px;
 }
 
 .container .card:nth-child(1) .icon {
@@ -73,8 +76,30 @@ a{
 .container .card:nth-child(1):hover .icon {
     background-color: white;
     color: black;
-    box-shadow: 0px 5px 15px rgba(14, 13, 13, 0.5);
-    transform: rotate(360deg);
-    /* transition: all ease 0.5s; */
+    box-shadow: 0px 0px 0px 500px red;
+    transform: rotate(-360deg);
+}
 
+.container .card:nth-child(1):hover .content {
+    color:white;
+}
+.container .card:nth-child(2):hover .icon {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 0px 500px gray;
+    transform: rotate(-360deg);
+}
+
+.container .card:nth-child(2):hover .content {
+    color:white;
+}
+.container .card:nth-child(3):hover .icon {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 0px 500px blue;
+    transform: rotate(-360deg);
+}
+
+.container .card:nth-child(3):hover .content {
+    color:white;
 }
