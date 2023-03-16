@@ -75,7 +75,7 @@ a{
 
 .container .card:nth-child(1):hover .icon {
     background-color: white;
-    color: black;
+    color: red;
     box-shadow: 0px 0px 0px 500px red;
     transform: rotate(-360deg);
 }
@@ -83,9 +83,12 @@ a{
 .container .card:nth-child(1):hover .content {
     color:white;
 }
+.container .card:hover .content a {
+   background-color: white;
+}
 .container .card:nth-child(2):hover .icon {
     background-color: white;
-    color: black;
+    color: gray;
     box-shadow: 0px 0px 0px 500px gray;
     transform: rotate(-360deg);
 }
@@ -95,7 +98,7 @@ a{
 }
 .container .card:nth-child(3):hover .icon {
     background-color: white;
-    color: black;
+    color: blue;
     box-shadow: 0px 0px 0px 500px blue;
     transform: rotate(-360deg);
 }
