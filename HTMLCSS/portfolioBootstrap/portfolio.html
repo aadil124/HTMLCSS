@@ -20,7 +20,7 @@
 
 <body>
   <!-- Start Navigation Bar -->
-  <nav class="navbar bg-body-light bg-success-subtle">
+  <nav class="navbar bg-body-light bg-success-subtle fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand text-danger" href="#">
         <img src="images/A_logo_red.webp" alt="Logo" height="35" class="d-inline-block align-text-top" />
@@ -34,11 +34,13 @@
         </a>
 
         <ul class="dropdown-menu dropdown-menu-end">
-          <li><a class="dropdown-item" href="#">Home</a></li>
-          <li><a class="dropdown-item" href="#">About Us</a></li>
-          <li><a class="dropdown-item" href="#">Portfolio</a></li>
-          <li><a class="dropdown-item" href="#">Contact Us</a></li>
-          <li><a class="dropdown-item" href="#">Testimonial</a></li>
+          <li><a class="dropdown-item" href="#home">Home</a></li>
+          <li><a class="dropdown-item" href="#aboutMe">About Us</a></li>
+          <li><a class="dropdown-item" href="#services">Services</a></li>
+          <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
+          <li><a class="dropdown-item" href="#hireMe">Hire Me</a></li>
+          <li><a class="dropdown-item" href="#contactUs">Contact Us</a></li>
+          <li><a class="dropdown-item" href="#testimonial">Testimonial</a></li>
         </ul>
       </div>
       <!-- End dropdown -->
@@ -47,7 +49,7 @@
   <!-- End Navigation Bar -->
 
   <!-- Start Home -->
-  <section class="home py-4">
+  <section class="home py-4 mt-5" id="home">
     <div class="container-fluid">
       <!-- Start Intro Row -->
       <div class="row">
@@ -81,7 +83,7 @@
   <!-- End Home -->
 
   <!-- Start About Me Row -->
-  <section class="about bg-light py-4">
+  <section class="about bg-light py-4" id="aboutMe">
     <div class="container-fluid">
       <div class="row justify-content-center">
         <!-- About Me Title Start -->
@@ -119,7 +121,7 @@
                 <p>Happy Clients</p>
               </div>
               <div class="col-md-4">
-                <h2 class="fs-1 fw-bold">100</h2>
+                <h2 class="fs-1 fw-bold">120</h2>
                 <p>Positive Review</p>
               </div>
             </div>
@@ -199,7 +201,7 @@
   <!-- End About Me Row -->
 
   <!-- Start Service Row -->
-  <section class="service py-4">
+  <section class="service py-4" id="services">
     <div class="container-fluid">
       <!-- Title Start  -->
       <div class="row justify-content-center">
@@ -212,7 +214,7 @@
       <!-- Service Content Start -->
       <div class="row">
         <!-- card 1 Start -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 mb-2">
           <div class="section_items text-center p-2 shadow p-3 bg-body-tertiary rounded">
             <!-- Icon  -->
             <div class="icon text-danger fs-1">
@@ -231,7 +233,7 @@
         </div>
         <!-- card 1 End -->
         <!-- card 2 Start -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 mb-2">
           <div class="section_items text-center p-2 shadow p-3  bg-body-tertiary rounded">
             <!-- Icon  -->
             <div class="icon text-danger fs-1">
@@ -250,7 +252,7 @@
         </div>
         <!-- card 2 End -->
         <!-- card 3 Start -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 mb-2">
           <div class="section_items text-center p-2 shadow p-3  bg-body-tertiary rounded">
             <!-- Icon  -->
             <div class="icon text-danger fs-1">
@@ -275,7 +277,7 @@
   <!-- End Service Row -->
 
   <!-- Start Portfolio Row -->
-  <section class="about bg-light py-4">
+  <section class="about bg-light py-4" id="portfolio">
     <div class="container-fluid">
       <div class="row justify-content-center">
         <!-- Portfolio Title Start -->
@@ -304,67 +306,67 @@
           <!-- Portfolio 2 Start -->
           <div class="col-md-6 col-lg-4">
             <div class="portfolio_items">
-              <img src="images/portfolioImages/carAnimation.avif" alt="Blogging Page" class="img-thumbnail">
-              <h5 class="fw-bold text-uppercase text-center py-3">Blogging Page</h5>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, enim rerum eligendi dolore
-                repellendus, totam tempore fugiat architecto labore numquam quam soluta aliquam consequatur ipsa eos
-                cumque cupiditate nobis officiis?</p>
-              <a href="#" class="text-decoration-none text-danger fw-semibold">
-                <p class="text-center">Live Preview</p>
-              </a>
-            </div>
+            <img src="images/portfolioImages/carAnimation.avif" alt="Blogging Page" class="img-thumbnail">
+            <h5 class="fw-bold text-uppercase text-center py-3">Blogging Page</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, enim rerum eligendi dolore
+              repellendus, totam tempore fugiat architecto labore numquam quam soluta aliquam consequatur ipsa eos
+              cumque cupiditate nobis officiis?</p>
+            <a href="#" class="text-decoration-none text-danger fw-semibold">
+              <p class="text-center">Live Preview</p>
+            </a>
           </div>
-          <!-- Portfolio 2 End -->
-          <!-- Portfolio 3 Start -->
-          <div class="col-md-6 col-lg-4">
-            <div class="portfolio_items">
-              <img src="images/portfolioImages/carAnimation.avif" alt="Admin Dashboard" class="img-thumbnail">
-              <h5 class="fw-bold text-uppercase text-center py-3">Admin Dashboard</h5>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, enim rerum eligendi dolore
-                repellendus, totam tempore fugiat architecto labore numquam quam soluta aliquam consequatur ipsa eos
-                cumque cupiditate nobis officiis?</p>
-              <a href="#" class="text-decoration-none text-danger fw-semibold">
-                <p class="text-center">Live Preview</p>
-              </a>
-            </div>
-          </div>
-          <!-- Portfolio 3 End -->
-          <!-- Portfolio 4 Start -->
-          <div class="col-md-6 col-lg-4">
-            <div class="portfolio_items">
-              <img src="images/portfolioImages/carAnimation.avif" alt="Amazon Clone" class="img-thumbnail">
-              <h5 class="fw-bold text-uppercase text-center py-3">Amazon Clone</h5>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, enim rerum eligendi dolore
-                repellendus, totam tempore fugiat architecto labore numquam quam soluta aliquam consequatur ipsa eos
-                cumque cupiditate nobis officiis?</p>
-              <a href="#" class="text-decoration-none text-danger fw-semibold">
-                <p class="text-center">Live Preview</p>
-              </a>
-            </div>
-          </div>
-          <!-- Portfolio 4 End -->
-          <!-- Portfolio 5 Start -->
-          <div class="col-md-6 col-lg-4">
-            <div class="portfolio_items">
-              <img src="images/portfolioImages/carAnimation.avif" alt="Netflix Clone" class="img-thumbnail">
-              <h5 class="fw-bold text-uppercase text-center py-3">Netflix Clone</h5>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, enim rerum eligendi dolore
-                repellendus, totam tempore fugiat architecto labore numquam quam soluta aliquam consequatur ipsa eos
-                cumque cupiditate nobis officiis?</p>
-              <a href="#" class="text-decoration-none text-danger fw-semibold">
-                <p class="text-center">Live Preview</p>
-              </a>
-            </div>
-          </div>
-          <!-- Portfolio 5 End -->
+        </div>
+        <!-- Portfolio 2 End -->
+        <!-- Portfolio 3 Start -->
+      <div class="col-md-6 col-lg-4">
+        <div class="portfolio_items">
+          <img src="images/portfolioImages/carAnimation.avif" alt="Admin Dashboard" class="img-thumbnail">
+          <h5 class="fw-bold text-uppercase text-center py-3">Admin Dashboard</h5>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, enim rerum eligendi dolore
+            repellendus, totam tempore fugiat architecto labore numquam quam soluta aliquam consequatur ipsa eos
+            cumque cupiditate nobis officiis?</p>
+          <a href="#" class="text-decoration-none text-danger fw-semibold">
+            <p class="text-center">Live Preview</p>
+          </a>
         </div>
       </div>
+      <!-- Portfolio 3 End -->
+      <!-- Portfolio 4 Start -->
+      <div class="col-md-6 col-lg-4">
+        <div class="portfolio_items">
+        <img src="images/portfolioImages/carAnimation.avif" alt="Amazon Clone" class="img-thumbnail">
+        <h5 class="fw-bold text-uppercase text-center py-3">Amazon Clone</h5>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, enim rerum eligendi dolore
+          repellendus, totam tempore fugiat architecto labore numquam quam soluta aliquam consequatur ipsa eos
+          cumque cupiditate nobis officiis?</p>
+        <a href="#" class="text-decoration-none text-danger fw-semibold">
+          <p class="text-center">Live Preview</p>
+        </a>
+      </div>
+    </div>
+    <!-- Portfolio 4 End -->
+    <!-- Portfolio 5 Start -->
+  <div class="col-md-6 col-lg-4">
+    <div class="portfolio_items">
+      <img src="images/portfolioImages/carAnimation.avif" alt="Netflix Clone" class="img-thumbnail">
+      <h5 class="fw-bold text-uppercase text-center py-3">Netflix Clone</h5>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, enim rerum eligendi dolore
+        repellendus, totam tempore fugiat architecto labore numquam quam soluta aliquam consequatur ipsa eos
+        cumque cupiditate nobis officiis?</p>
+      <a href="#" class="text-decoration-none text-danger fw-semibold">
+        <p class="text-center">Live Preview</p>
+      </a>
+    </div>
+    </div>
+    <!-- Portfolio 5 End -->
+    </div>
+    </div>
     </div>
   </section>
   <!-- End Portfolio Row -->
 
   <!-- Start Hire me Row -->
-  <section class="freelance_hire text-bg-danger py-4">
+  <section class="freelance_hire text-bg-danger py-4" id="hireMe">
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
@@ -378,7 +380,7 @@
   <!-- End Hire me Row -->
 
   <!-- Start Testimonial Row -->
-  <section class="testimonial bg-light py-4">
+  <section class="testimonial bg-light py-4" id="testimonial">
     <div class="container-fluid">
       <div class="row justify-content-center">
         <!-- Testimonial Title Start -->
@@ -496,14 +498,15 @@
   <!-- End Testimonial Row -->
 
   <!-- Start of Contact with me Row -->
-
-  <section class="contact py-4">
-    <div class="container-fluid">
+  <section class="contact py-4" id="contactUs">
+    <div class="container-lg">
       <!-- Section title  -->
       <div class="row justify-content-center">
         <!-- Connect with me title  -->
-        <div class="col-8">
-          <h2 class="fw-bold text-center">Connect with me</h2>
+        <div class="col-8 py-4">
+          <section class="text-center">
+            <h2 class="fw-bold">Connect with me</h2>
+          </section>
         </div>
         <!-- Section body  -->
         <div class="row">
@@ -536,7 +539,8 @@
               </div>
               <div class="text ps-4">
                 <h4 class="text-danger fw-bold">Registered Office</h4>
-                <p class="text-muted">759/205 Baba Apartment Mahebub Compound Roshan Bagh Bhiwandi Dist Thane Maharashtra 421305. </p>
+                <p class="text-muted">759/205 Baba Apartment Mahebub Compound Roshan Bagh Bhiwandi Dist Thane
+                  Maharashtra 421305. </p>
               </div>
             </div>
           </div>
@@ -544,28 +548,41 @@
           <!-- Right section item Start -->
           <div class="col-lg-7">
             <div class="row">
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Your Name" aria-label="Username" >
+              <div class="col-lg-6 mb-4">
+                <input type="text" class="form-control p-2 fs-6" placeholder="Your Name" aria-label="Username">
               </div>
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Your Name" aria-label="Username" >
+              <div class="col-lg-6 mb-4">
+                <input type="email" class="form-control p-2 fs-6" placeholder="Your Email" aria-label="Username">
               </div>
             </div>
-            <div class="row"></div>
-            <div class="row"></div>
+            <div class="row">
+              <div class="col-lg-12 mb-4">
+                <input type="email" class="form-control p-2 border-1 fs-6" placeholder="Subject" aria-label="Username">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 mb-4">
+                <textarea name="text" id="" cols="30" rows="5" class="form-control p-2 border-1 fs-6"
+                  placeholder="Message"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 mb-4">
+                <button type="button" class="btn btn-outline-danger">Send</button>
+              </div>
+            </div>
           </div>
           <!-- Right section item End -->
         </div>
       </div>
     </div>
   </section>
-
   <!-- End of Contact with me Row -->
 
   <!-- Start Footer Row -->
   <section class="footer_item py-4">
     <div class="container-fluid">
-      <div class="row justify-content-center ">
+      <div class="row">
         <!-- Footer Content  -->
         <!-- Branding col start -->
         <div class="col-lg-4 text-center">
@@ -577,11 +594,11 @@
         <div class="col-lg-4 text-center">
           <h3 class="fw-bold text-danger">Quick Links</h3>
           <ul class="list-unstyled">
-            <li><a class="dropdown-item text-decoration-none text-muted " href="#">Home</a></li>
-            <li><a class="dropdown-item text-decoration-none text-muted" href="#">About Us</a></li>
-            <li><a class="dropdown-item text-decoration-none text-muted" href="#">Portfolio</a></li>
-            <li><a class="dropdown-item text-decoration-none text-muted" href="#">Contact Us</a></li>
-            <li><a class="dropdown-item text-decoration-none text-muted" href="#">Testimonial</a></li>
+            <li><a class="dropdown-item text-decoration-none text-muted " href="#home">Home</a></li>
+            <li><a class="dropdown-item text-decoration-none text-muted" href="#aboutMe">About Us</a></li>
+            <li><a class="dropdown-item text-decoration-none text-muted" href="#portfolio">Portfolio</a></li>
+            <li><a class="dropdown-item text-decoration-none text-muted" href="#contactUs">Contact Us</a></li>
+            <li><a class="dropdown-item text-decoration-none text-muted" href="#testimonial">Testimonial</a></li>
           </ul>
         </div>
         <!-- Quick link col  End -->
